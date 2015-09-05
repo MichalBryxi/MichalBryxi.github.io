@@ -1,0 +1,121 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+\moderncvcolor{red}                          % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
+
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\firstname{Ing. Michal}
+\familyname{Bryxí}
+\title{Curriculum vitae}               % optional, remove the line if not wanted
+\address{Těšínská 15}{312 00 Plzeň}{ Czech Republic}    % optional, remove the line if not wanted
+\mobile{+420~720~160~425}                    % optional, remove the line if not wanted
+%\phone{Skype: michal.bryxi}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{michal.bryxi@gmail.com}                      % optional, remove the line if not wanted
+\extrainfo{skype: michal.bryxi} % optional, remove the line if not wanted
+\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{No rest is worth anything except the rest that is earned.}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2005--2011}{Ing. (Engineer)}{University of West Bohemia - Faculty of Applied Sciences}{Pilsen}{}{}
+%\cventry{2008--2011}{Ing. (Engineer)}{University of West Bohemia - Faculty of Applied Sciences}{Pilsen}{}{}
+%\cventry{2005--2008}{Bc. (Bachelor)}{University of West Bohemia - Faculty of Applied Sciences}{Pilsen}{}{}
+\cvline{2001--2005}{High industrial school Kutná Hora}{}{}
+
+\section{Experience}
+\subsection{Information Technology}
+\cventry{2010--2013}{Configuration manager}{\href{http://www.intraworlds.cz}{IntraWorlds s.r.o}}{}{}{
+  Linux infrastructure maintenance and growth. OS/application security and performance. Automation of daily developer tasks. Achieved goals:
+  \begin{itemize}
+    \item {Product migration from ISO 8859-1 to UTF8}
+    \item {Implementation of ISO 27001 - \small{information security management system}}
+    \item {Production migration to Puppet - \small{IT automation software}}
+    \item {Implementation of central logging tool - Logstash}
+  \end{itemize}
+}
+\cventry{2012}{Configuration manager}{\url{http://vsechnyzakazky.cz}}{}{}{
+  Linux server administration - \emph{puppet}; virtualization - \emph{libvirt} and \emph{KVM}; security
+}
+\cventry{2008--2011}{Linux administrator}{\url{http://mujhost.net}}{}{}{
+  Consultation for existing solutions and their improvement. Virtualization. Security.
+}
+\cventry{2009}{IT consulting}{\url{http://aktivuj.cz}}{}{}{
+  MySQL query optimization. Database and Apache tweaking. Application security and response times improvement.
+}
+\cventry{2008--2011}{Webmaster, linux administrator}{\url{http://dione.zcu.cz}}{}{}{
+  Implementation of e-zine based on Drupal CMS. Linux system administration.
+}
+\cventry{2008}{Lector on network administrator course}{Jan Ámos Komenský academy}{}{}{
+  Network administrator course for employment office.
+}
+
+\subsection{Organizational}
+\cventry{2009--2010}{Founder of \url{http://tylidi.zcu.cz}}{University of West Bohemia}{}{}{Seminar focused on attracting young women to IT.}
+\cventry{2007--2008}{Lector on IT camp}{Travel agency Sindibád}{}{}{Camp oriented on acquiring basic knowledge of HTML, CSS, and good habits of using computers for children from 10 to 15 years.}
+\cventry{2005--2009}{Promotional work}{University of West Bohemia}{}{}{
+    \begin{itemize}%
+        \item{ Assistance during \emph{Faculty of Applied Sciences} Open days - Navigating visitors, handing out leaflets, discussing with prospective students. }
+        \item{ \emph{University of West Bohemia} popularization on secondary schools. Lectures about college studies and about University of West Bohemia. }
+        \item{ Informal discussions - freshmen with older students. }
+    \end{itemize}
+}
+
+\section{Languages}
+\cvlanguage{English}{advanced}{Advanced written and spoken communication.}
+\cvlanguage{German}{beginner}{Basic reading and speech understanding.}
+
+\section{Computer skills}
+\cvline{Languages advanced}{BASH, CSS, HTML, \LaTeX, MySQL, PHP, Ruby}
+\cvline{Languages beginner}{AWK, C, C++, Java, JavaScript, LESS, LISP, Matlab, Prolog, Python, SASS, SED}
+\cvline{Sysadmin}{Amazon EC2, Apache, Cacti, Elastic Search, iptables, linux (Gentoo, Debian, RHEL), Logstash, memcached, MySQL, Nagios, PostgreSQL, puppet, redis, shell scripts, TCP/IP}
+\cvline{Other}{Capistrano, CakePHP, Drupal, GIMP, git, Google app engine, Heroku, Inkscape, jQuery, Open Office, rake, redmine, Ruby on Rails, subversion, trac, Zend framework}
+
+\section{Projects}
+\cvlistitem{ Malware cleaner for Apache ``APR fork vulnerability'' vulnerability: \\\url{https://github.com/MichalBryxi} }
+\cvlistitem{ Pure CSS3 countdown timer. RoR, Hroku, LESS concept project: \\\url{http://ding.pudr.com} }
+\cvlistitem{ Cell phone invoice manager for O2 corporate customers: \\\url{http://foun.pudr.com} }
+%\cvlistitem{ My gist snippets: \\\url{https://gist.github.com/MichalBryxi} }
+\cvlistitem{ Webpages:
+  \begin{itemize}
+    \item \url{http://kulecnik-plzen.cz}
+    \item \url{http://alkadomky.cz}
+    \item \url{http://dione.zcu.cz}
+    \item \url{http://tylidi.zcu.cz}
+    \item \url{http://os-smisek.cz}
+  \end{itemize}
+}
+
+\section{Extra}
+\cvlistitem{Driver's licence A (motorcycle) and B (car)}
+
+\section{Interests}
+\cvlistitem{good UX; RoR; puppet; useful scripts; HTML~5; CSS~3}
+\cvlistitem{parachute jump; climb up radio towers (150 m); roller coasters; couchsurfing}
+\cvlistitem{cycling; rock climbing; geocaching; social experiments}
+
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
