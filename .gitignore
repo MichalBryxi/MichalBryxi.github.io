@@ -3,4 +3,6 @@
 *.fls
 *.log
 *.out
-*.syntex.gz
+*.gz
+*.bcf
+*.run.xml
