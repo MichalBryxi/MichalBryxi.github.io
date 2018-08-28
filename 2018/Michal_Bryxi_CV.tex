@@ -89,6 +89,7 @@
 \makecvheader
 \end{fullwidth}
 
+
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 \AtBeginEnvironment{itemize}{\small}
 
@@ -98,54 +99,40 @@
 %% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Experience}
 
-\cvevent{Front-end developer}{Puppet}{2013 -- 2018}{Belfast, Northern Ireland}
-\begin{itemize}
-  \item Development of ambitious Ember.js applications - Puppet Enterprise Console
-\end{itemize}
+  \cvevent{Front-end developer}{\href{https://puppet.com}{Puppet}}{2013 -- 2018}{Belfast, Northern Ireland}
+    \begin{itemize}
+      \item Frontend development of Puppet Enterprise Console
+    \end{itemize}
+  \divider
 
-\divider
+  \cvevent{Configuration manager}{\href{https://intraworlds.com}{IntraWorlds s.r.o.}}{2010 -- 2013}{Pilsen, Czechia}
+    \begin{itemize}
+      \item Linux infrastructure maintenance and growth. OS/application security and performance. Automation of daily developer tasks.
+      \item Product / infrastructure migration from ISO 8859-1 to UTF8.
+      \item Implementation of ISO 27001 - information security management system.
+      \item Infrastructure migration to Puppet.
+    \end{itemize}
+  \divider
 
-\cvevent{Configuration manager}{IntraWorlds s.r.o.}{2010 -- 2013}{Pilsen, Czechia}
-\begin{itemize}
-  \item Linux infrastructure maintenance and growth. OS/application security and performance. Automation of daily developer tasks.
-  \item Product migration from ISO 8859-1 to UTF8.
-  \item Implementation of ISO 27001 - information security management system.
-  \item Infrastructure migration to Puppet - IT automation software.
-  \item Implementation of central logging tool - Logstash.
-\end{itemize}
+  \cvevent{Configuration manager}{\href{https://vsechnyzakazky.cz}{vsechnyzakazky.cz}}{2012}{Remote}
+    \begin{itemize}
+      \item Automating administration of linux servers via puppet
+      \item Virtualization - libvirt and KVM
+    \end{itemize}
+  \divider
 
-\divider
+  \cvevent{Webmaster, linux administrator}{\href{https://dione.zcu.cz}{dione.zcu.cz}}{2008 -- 2011}{Pilsen, Czechia}
+    \begin{itemize}
+      \item Implementation of e-zine based on Drupal for University of West Bohemia.
+      \item Linux system administration.
+    \end{itemize}
+  \divider
 
-\cvevent{Configuration manager}{vsechnyzakazky.cz}{2012}{}
-\begin{itemize}
-  \item{Linux server administration - puppet; virtualization - libvirt and KVM; security}
-\end{itemize}
-
-\divider
-
-\cvevent{Webmaster, linux administrator}{dione.zcu.cz}{2008 -- 2011}{}
-
-\begin{itemize}
-  \item Implementation of e-zine based on Drupal CMS.
-  \item Linux system administration.
-\end{itemize}
-
-\divider
-
-\cvevent{Lector on network administrator course}{Jan Ámos Komenský academy}{2008}{}
-
-\begin{itemize}
-  \item{Network administrator course for employment office.}
-\end{itemize}
-
-% \divider
-
-% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
-
-% \begin{itemize}
-% \item Joined the company as employe \#20 and female employee \#1
-% \item Developed targeted advertisement in order to use user's search queries and show them related ads
-% \end{itemize}
+  \cvevent{Lector on network administrator course}{Jan Ámos Komenský academy}{2008}{Pilsen, Czechia}
+    \begin{itemize}
+      \item{Network administrator course for labor office.}
+    \end{itemize}
+  \divider
 
 \cvsection{Free time}
 
@@ -154,30 +141,63 @@
 % comma-separated list of value/text width/color/detail}
 % Some ad-hoc tweaking to adjust the labels so that they don't overlap
 \wheelchart{1.5cm}{0.5cm}{%
-  10/10em/accent!30/Running,
-  25/9em/accent!60/Rock climbing,
-  5/13em/accent!10/Side projects \footnotesize(mostly IT related),
-  20/15em/accent!40/Cycling,
-  5/8em/accent!20/Traveling,
-  30/9em/accent/Geocaching,
-  5/8em/accent!20/
+  15/10em/accent!45/Running,
+  20/9em/accent!60/Rock climbing,
+  10/15em/accent!30/Cycling,
+  20/13em/accent!60/Side projects,
+  15/8em/accent!45/New things,
+  20/9em/accent!60/Traveling,
+  5/8em/accent!15/Geocaching
 }
 
 \clearpage
 
-\cvsection[page2sidebar]{Publications}
+\cvsection{Projects}
 
-\nocite{*}
+  \cvachievement{\faLowVision}{\href{https://gradient-company.pudr.com}{gradient-company.pudr.com}}{Fully accessible web comics. Exploratory React project trying to bend the rules of possible with CSS \& accessibility.}
+  \divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+  \cvachievement{\faScissors}{\href{https://beauty-pay.cz}{beauty-pay.cz}}{All in one solution for hairdressers. Rails + EmberJS app.}
+  \divider
 
-\divider
+  \cvachievement{\faUsers}{\href{https://www.meetup.com/DevOps-Pilsen}{DevOps Pilsen}}{Local DevOps group.}
+  \divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+  \cvachievement{\faPhone}{Foun}{Cell phone invoice manager for Vodafone corporate customers (private project).}
+  \divider
 
-\divider
+  \cvachievement{\faHome}{\href{http://30dni-minimalismu.pudr.com}{30dni-minimalismu.pudr.com}}{Charitative event when participants are getting rid of things they no longer need and the profit gained goes towards a foster home. }
+  \divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+  \cvachievement{\faFemale}{\href{http://tylidi.zcu.cz}{tylidi.zcu.cz}}{Seminar focused on attracting young women to IT.}
+  \divider
+
+  \cvachievement{\faGraduationCap}{Lector on IT camp}{Camp oriented on acquiring basic knowledge of HTML, CSS, and good habits of using computers for children from 10 to 15 years.}
+  \divider
+
+  \cvachievement{\faSafari}{Simple presentation webpages}{
+    \begin{itemize}
+      \item \url{http://kulecnik-plzen.cz}
+      \item \url{http://os-smisek.cz}
+      \item \url{http://malajsie.pudr.com}
+      \item \url{http://vr2015.pudr.com}
+    \end{itemize}
+  }
+  \divider
+
+% \cvsection[page2sidebar]{Publications}
+
+% \nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
 
 %% If the NEXT page doesn't start with a \cvsection but you'd
 %% still like to add a sidebar, then use this command on THIS
@@ -187,3 +207,6 @@
 % \addnextpagesidebar[-1ex]{page3sidebar}
 
 \end{document}
+
+
+
