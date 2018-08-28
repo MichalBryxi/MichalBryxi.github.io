@@ -1,0 +1,189 @@
+% !TEX program = lualatex
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+\setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Michal Bryxí}
+\tagline{Full stack developer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{picture.png}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{michal.bryxi@gmail.com}
+  \phone{0044 747 534 6614}
+  % \mailaddress{Address, Street, 00000 County}
+  \location{Belfast, Northern Ireland}
+  \homepage{https://pudr.com}
+  \twitter{@MichalBryxi}
+  \linkedin{linkedin.com/in/michalbryxi}
+  % \printinfo{\faGitlab}{bar}
+  % \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Front-end developer}{Puppet}{2013 -- 2018}{Belfast, Northern Ireland}
+\begin{itemize}
+  \item Development of ambitious Ember.js applications - Puppet Enterprise Console
+\end{itemize}
+
+\divider
+
+\cvevent{Configuration manager}{IntraWorlds s.r.o.}{2010 -- 2013}{Pilsen, Czechia}
+\begin{itemize}
+  \item Linux infrastructure maintenance and growth. OS/application security and performance. Automation of daily developer tasks.
+  \item Product migration from ISO 8859-1 to UTF8.
+  \item Implementation of ISO 27001 - information security management system.
+  \item Infrastructure migration to Puppet - IT automation software.
+  \item Implementation of central logging tool - Logstash.
+\end{itemize}
+
+\divider
+
+\cvevent{Configuration manager}{vsechnyzakazky.cz}{2012}{}
+\begin{itemize}
+  \item{Linux server administration - puppet; virtualization - libvirt and KVM; security}
+\end{itemize}
+
+\divider
+
+\cvevent{Webmaster, linux administrator}{dione.zcu.cz}{2008 -- 2011}{}
+
+\begin{itemize}
+  \item Implementation of e-zine based on Drupal CMS.
+  \item Linux system administration.
+\end{itemize}
+
+\divider
+
+\cvevent{Lector on network administrator course}{Jan Ámos Komenský academy}{2008}{}
+
+\begin{itemize}
+  \item{Network administrator course for employment office.}
+\end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\cvsection{My free time}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\wheelchart{1.5cm}{0.5cm}{%
+  10/10em/accent!30/Running,
+  25/9em/accent!60/Rock climbing,
+  5/13em/accent!10/Side projects \footnotesize(mostly IT related),
+  20/15em/accent!40/Cycling,
+  5/8em/accent!20/Traveling,
+  30/9em/accent/Geocaching,
+  5/8em/accent!20/
+}
+
+\clearpage
+
+\cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
