@@ -68,7 +68,7 @@
 \name{Michal Bryxí}
 \tagline{Full stack web developer}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
-\photo{2.5cm}{picture.png}
+\photo{2.5cm}{picture.jpg}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
@@ -76,7 +76,7 @@
   \phone{0044 747 534 6614}
   % \mailaddress{Address, Street, 00000 County}
   \location{Belfast, Northern Ireland}
-  \homepage{https://www.pudr.com}
+  \homepage{www.pudr.com}
   \twitter{@MichalBryxi}
   \linkedin{linkedin.com/in/michalbryxi}
   % \printinfo{\faGitlab}{bar}
@@ -86,7 +86,7 @@
 
 %% Make the header extend all the way to the right, if you want.
 \begin{fullwidth}
-\makecvheader
+  \makecvheader
 \end{fullwidth}
 
 
@@ -101,7 +101,7 @@
 
   \cvevent{Front-end developer}{\href{https://puppet.com}{Puppet}}{2013 -- 2018}{Belfast, Northern Ireland}
     \begin{itemize}
-      \item Frontend development of Puppet Enterprise Console
+      \item Frontend development of Puppet Enterprise Console.
     \end{itemize}
   \divider
 
@@ -116,8 +116,8 @@
 
   \cvevent{Configuration manager}{\href{https://vsechnyzakazky.cz}{vsechnyzakazky.cz}}{2012}{Remote}
     \begin{itemize}
-      \item Automating administration of linux servers via puppet
-      \item Virtualization - libvirt and KVM
+      \item Automating administration of linux servers via puppet.
+      \item Virtualization - libvirt and KVM.
     \end{itemize}
   \divider
 
@@ -152,48 +152,53 @@
 
 \clearpage
 
-\cvsection{Projects}
+\begin{fullwidth}
+\cvsection{Side projects}
 
-  \cvachievement{\faLowVision}{\href{https://gradient-company.pudr.com}{gradient-company.pudr.com}}{Fully accessible web comics. Exploratory React project trying to bend the rules of possible with CSS \& accessibility.}
+  \cvachievement{\faLowVision}{\href{https://gradient-company.pudr.com}{gradient-company.pudr.com}}{Fully accessible web comics. Exploratory React project trying to bend the rules of what is possible with CSS \& accessibility.}
   \divider
 
-  \cvachievement{\faScissors}{\href{https://beauty-pay.cz}{beauty-pay.cz}}{All in one solution for hairdressers. Rails + EmberJS app.}
+  \cvachievement{\faScissors}{\href{https://beauty-pay.cz}{beauty-pay.cz}}{All in one solution for hairdressers. EmberJS, Ruby on Rails, PostgreSQL, Docker, GitLab CI, Heroku, Netlify, Mailgun.}
   \divider
 
-  \cvachievement{\faUsers}{\href{https://www.meetup.com/DevOps-Pilsen}{DevOps Pilsen}}{Local DevOps group.}
+  \cvachievement{\faUsers}{\href{https://www.meetup.com/DevOps-Pilsen}{DevOps Pilsen}}{Local DevOps meetup running biannually with (so far) exponential growth of attendees.}
   \divider
 
   \cvachievement{\faPhone}{Foun}{Cell phone invoice manager for Vodafone corporate customers (private project).}
   \divider
 
-  \cvachievement{\faHome}{\href{http://30dni-minimalismu.pudr.com}{30dni-minimalismu.pudr.com}}{Charitable event when participants are getting rid of things they no longer need and the profit gained goes towards a foster home. }
+  \cvachievement{\faHome}{\href{http://30dni-minimalismu.pudr.com}{30dni-minimalismu.pudr.com}}{Charitable event. Participants are getting rid of things they no longer need and the profit gained goes towards a~foster home. }
   \divider
 
-  \cvachievement{\faFemale}{\href{http://tylidi.zcu.cz}{tylidi.zcu.cz}}{Seminar focused on attracting young women to IT.}
+  \cvachievement{\faFemale}{\href{http://tylidi.zcu.cz}{tylidi.zcu.cz}}{Seminar focused on attracting young women into IT.}
   \divider
 
-  \cvachievement{\faGraduationCap}{Lector on IT camp}{Camp oriented on acquiring basic knowledge of HTML, CSS, and good habits of using computers for children from 10 to 15 years.}
+  \cvachievement{\faGraduationCap}{Lector on IT camp}{Camp oriented on acquiring basic knowledge of HTML, CSS, and good habits of using computers for children from 10 to 15 years of age.}
   \divider
 
   \cvachievement{\faBug}{\href{https://github.com/MichalBryxi/Apache-fork-hack-finder-cleaner}{Apache fork hack cleaner}}{Script to detect specific malware installed on websites served via vulnerable version of Apache.}
   \divider
 
-  \cvachievement{\faArchive}{\href{https://github.com/MichalBryxi/duplicity-panic-extractor}{Duplicity panic extractor}}{Backup disaster recovery tool.}
+  \cvachievement{\faArchive}{\href{https://github.com/MichalBryxi/duplicity-panic-extractor}{Duplicity panic extractor}}{Script allowing the extraction of corrupted backup archives from Duplicity.}
+  \divider
+
+  \cvachievement{\faCogs}{\href{http://endohancer.pudr.com/}{endohancer.pudr.com}}{Web service to allow mass editting of workouts on Endomondo.}
   \divider
 
   \cvachievement{\faSafari}{Websites}{
-    \begin{itemize}
-      \item \url{http://kulecnik-plzen.cz} - business presentation
-      \item \url{http://os-smisek.cz} - NGO presentation
-      \item \url{http://malajsie.pudr.com} - travel blog
-      \item \url{http://vr2015.pudr.com} - event blog
-      \item \url{http://elberadweg.pudr.com/} - travel blog
-      \item \url{http://korektor.pudr.com/} - game
-      \item \url{http://katy.pudr.com/} - game
-    \end{itemize}
+    \begin{description}
+      \item [Billiard club presentation] {\footnotesize(Drupal)} \url{http://kulecnik-plzen.cz}
+      \item [NGO presentation] {\footnotesize(Joomla)} \url{http://os-smisek.cz}
+      \item [Travel blog] {\footnotesize(Firebase)} \url{http://malajsie.pudr.com}
+      \item [Event blog] {\footnotesize(Firebase)} \url{http://vr2015.pudr.com}
+      \item [Travel blog] {\footnotesize(Bootstrap)} \url{http://elberadweg.pudr.com/}
+      \item [Game / present] {\footnotesize(EmberJS, Material UI)} \url{http://korektor.pudr.com/}
+      \item [Game / birthday present] {\footnotesize(EmberJS, Material UI)} \url{http://katy.pudr.com/}
+    \end{description}
   }
   \divider
 
+  \end{fullwidth}
 % \cvsection[page2sidebar]{Publications}
 
 % \nocite{*}
@@ -216,6 +221,3 @@
 % \addnextpagesidebar[-1ex]{page3sidebar}
 
 \end{document}
-
-
-
