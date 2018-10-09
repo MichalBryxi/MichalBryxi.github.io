@@ -3,7 +3,7 @@
 ```sh
 sudo curl https://gist.githubusercontent.com/rohitrawat/60a04e6ebe4a9ec1203eac3a11d4afc1/raw/fcdfde2ab57e455ba9b37077abf85a81c504a4a9/sources.list -o /etc/apt/sources.list.d/xenial.list
 sudo apt install texlive texlive-luatex texlive-bibtex-extra texlive-fonts-extra pdf2htmlex
-pdf2htmlEX --embed cfijo --split-pages 1 --dest-dir out --page-filename cv-%d.html Michal_Bryxi_CV.pdf
+pdf2htmlEX 2018/Michal_Bryxi_CV.pdf; mv Michal_Bryxi_CV.html index.html
 python3 -m http.server
 ```
 
