@@ -1,3 +1,14 @@
+# HowTo set this up & build
+
+```sh
+sudo curl https://gist.githubusercontent.com/rohitrawat/60a04e6ebe4a9ec1203eac3a11d4afc1/raw/fcdfde2ab57e455ba9b37077abf85a81c504a4a9/sources.list -o /etc/apt/sources.list.d/xenial.list
+sudo apt install texlive texlive-luatex texlive-bibtex-extra texlive-fonts-extra pdf2htmlex
+pdf2htmlEX --embed cfijo --split-pages 1 --dest-dir out --page-filename cv-%d.html Michal_Bryxi_CV.pdf
+python3 -m http.server
+```
+
+Go to: [http://0.0.0.0:8000/out/Michal_Bryxi_CV.html](http://0.0.0.0:8000/out/Michal_Bryxi_CV.html)
+
 # AltaCV, yet another LaTeX CV/Résumé class
 
 v1.1.4 (27 July 2018), by LianTze Lim (liantze@gmail.com)
