@@ -1,9 +1,26 @@
-# HowTo set this up & build
+# Installation
 
+1. Install [LaTeX Workshop][1] code extension
+
+## Linux
 ```sh
 sudo curl https://gist.githubusercontent.com/rohitrawat/60a04e6ebe4a9ec1203eac3a11d4afc1/raw/fcdfde2ab57e455ba9b37077abf85a81c504a4a9/sources.list -o /etc/apt/sources.list.d/xenial.list
 sudo apt install texlive texlive-luatex texlive-bibtex-extra texlive-fonts-extra pdf2htmlex
 ```
+
+## macOS
+```sh
+brew install mactex
+brew install font-lato
+```
+
+# Build PDF
+
+```sh
+# TODO
+```
+
+# Build HTML
 
 To (redo) build:
 ```sh 
@@ -49,3 +66,5 @@ Though if you're creating your own CV/résumé, you'd probably prefer using the 
 * Can now be compiled with pdflatex, XeLaTeX and LuaLaTeX!
 * However if you're using `academicons`, you _must_ use either XeLaTeX or LuaLaTeX. If the doc then compiles but the icons don't show up in the output PDF, try compiling with LuaLaTeX instead.
 * The samples here use the [Lato](http://www.latofonts.com/lato-free-fonts/) font.
+
+[1]: https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop
