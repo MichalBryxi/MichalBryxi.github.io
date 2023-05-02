@@ -2,6 +2,10 @@
 
 1. Install [LaTeX Workshop][1] code extension
 
+## Windows
+
+1. Install [Tex Live][2]
+
 ## Linux
 ```sh
 sudo curl https://gist.githubusercontent.com/rohitrawat/60a04e6ebe4a9ec1203eac3a11d4afc1/raw/fcdfde2ab57e455ba9b37077abf85a81c504a4a9/sources.list -o /etc/apt/sources.list.d/xenial.list
@@ -16,9 +20,9 @@ brew install font-lato
 
 # Build PDF
 
-```sh
-# TODO
-```
+1. Open the `*.tex` file in vscode
+2. Click the "play" icon in the top right corner
+3. Open the resulting `*.pdf`
 
 # Build HTML
 
@@ -68,3 +72,4 @@ Though if you're creating your own CV/résumé, you'd probably prefer using the 
 * The samples here use the [Lato](http://www.latofonts.com/lato-free-fonts/) font.
 
 [1]: https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop
+[2]: https://www.tug.org/texlive/
