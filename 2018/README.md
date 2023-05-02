@@ -38,7 +38,7 @@ python3 -m http.server
 
 Go to: [http://0.0.0.0:8000/out/Michal_Bryxi_CV.html](http://0.0.0.0:8000/out/Michal_Bryxi_CV.html)
 
-# About
+# About1
 
 As a base I used [AltaCV Template][3] (v1.6.5, 3 Nov 2022)
 
