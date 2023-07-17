@@ -74,14 +74,14 @@
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{michal.bryxi@gmail.com}
-  \phone{+41779554796}
+  \href{mailto:michal.bryxi@gmail.com}{\email{michal.bryxi@gmail.com}}
+  \href{tel:+41779554796}{\phone{+41779554796}}
   % \mailaddress{Address, Street, 00000 County}
   \location{Interlaken, Switzerland}
-  \homepage{www.pudr.com}
-  \twitter{MichalBryxi}
-  \linkedin{linkedin.com/in/michalbryxi}
-  \printinfo{\faGitlab}{bar}
+  % \homepage{www.pudr.com}
+  \href{https://linkedin.com/in/michalbryxi}{\linkedin{linkedin.com/in/michalbryxi}}
+  \href{https://gitlab.com/michal.bryxi}{\printinfo{\faGitlab}{gitlab.com/michal.bryxi}}
+  \href{https://github.com/MichalBryxi}{\printinfo{\faGithub}{github.com/MichalBryxi}}
   % \github{github.com/mmayer} % I'm just making this up though.
 %   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
 }
@@ -194,7 +194,7 @@
   }
 
 \cvsection{Community projects}
-  \cvachievement{\faUsers}{\href{https://www.meetup.com/DevOps-Pilsen}{DevOps Pilsen}}{Local DevOps meetup running biannually with (so far) exponential growth of attendees.}
+  \cvachievement{\faMountain}{\href{https://flightclub-interlaken.ch/}{Flight Club Interlaken}}{A social space for outdoor people. Helping with event organisation.}
   \divider
 
   \cvachievement{\faGraduationCap}{IT camp lector}{Camp oriented on acquiring basic knowledge of HTML, CSS, and good habits of using computers for children from 10 to 15 years of age.}
