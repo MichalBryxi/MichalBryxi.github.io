@@ -16,6 +16,7 @@ sudo apt install texlive texlive-luatex texlive-bibtex-extra texlive-fonts-extra
 ```sh
 brew install mactex
 brew install font-lato
+brew install pdf2htmlex
 ```
 
 # Build PDF
@@ -28,7 +29,7 @@ brew install font-lato
 
 To (redo) build:
 ```sh 
-pdf2htmlEX 2018/Michal_Bryxi_CV.pdf; mv Michal_Bryxi_CV.html index.html
+pdf2htmlex 2023/Michal_Bryxi_CV.pdf; mv Michal_Bryxi_CV.html index.html
 ```
 
 To preview changes:
