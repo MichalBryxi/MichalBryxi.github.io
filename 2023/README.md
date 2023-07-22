@@ -9,14 +9,13 @@
 ## Linux
 ```sh
 sudo curl https://gist.githubusercontent.com/rohitrawat/60a04e6ebe4a9ec1203eac3a11d4afc1/raw/fcdfde2ab57e455ba9b37077abf85a81c504a4a9/sources.list -o /etc/apt/sources.list.d/xenial.list
-sudo apt install texlive texlive-luatex texlive-bibtex-extra texlive-fonts-extra pdf2htmlex
+sudo apt install texlive texlive-luatex texlive-bibtex-extra texlive-fonts-extra
 ```
 
 ## macOS
 ```sh
 brew install mactex
 brew install font-lato
-brew install pdf2htmlex
 ```
 
 # Build PDF
@@ -27,19 +26,10 @@ brew install pdf2htmlex
 
 # Build HTML
 
-To (redo) build:
-```sh 
-pdf2htmlex 2023/Michal_Bryxi_CV.pdf; mv Michal_Bryxi_CV.html index.html
-```
+- There is no build step, PDF will be embeded into the webpage.
+- To preview locally, open `index.html` in the root of the repo.
 
-To preview changes:
-```sh
-python3 -m http.server
-```
-
-Go to: [http://0.0.0.0:8000/out/Michal_Bryxi_CV.html](http://0.0.0.0:8000/out/Michal_Bryxi_CV.html)
-
-# About1
+# About
 
 As a base I used [AltaCV Template][3] (v1.6.5, 3 Nov 2022)
 
