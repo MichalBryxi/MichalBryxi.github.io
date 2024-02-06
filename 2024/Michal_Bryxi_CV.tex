@@ -1,0 +1,233 @@
+% !TEX program = lualatex
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+\definecolor{mygray}{gray}{0.95}
+\pagecolor{mygray}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{197278}
+\definecolor{SlateGrey}{HTML}{222222}
+\definecolor{LightGrey}{HTML}{808782}
+\colorlet{heading}{VividPurple}
+\colorlet{tagline}{SlateGrey}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+% \addbibresource{sample.bib}
+
+\begin{document}
+\name{Michal Bryxí}
+\tagline{Full stack web developer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{picture.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \href{mailto:michal.bryxi@gmail.com}{\email{michal.bryxi@gmail.com}}
+  \href{tel:+41779554796}{\phone{+41779554796}}
+  % \mailaddress{Address, Street, 00000 County}
+  \location{Interlaken, Switzerland}
+  % \homepage{www.pudr.com}
+  \href{https://linkedin.com/in/michalbryxi}{\linkedin{linkedin.com/in/michalbryxi}}
+  \href{https://gitlab.com/michal.bryxi}{\printinfo{\faGitlab}{gitlab.com/michal.bryxi}}
+  \href{https://github.com/MichalBryxi}{\printinfo{\faGithub}{github.com/MichalBryxi}}
+  % \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+  \makecvheader
+\end{fullwidth}
+
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+  \cvevent{Engineering manager}{\href{https://www.crowdstrike.com/}{CrowdStrike}}{2021 -- 2023}{Interlaken, Switzerland}
+  \begin{itemize}
+    \item Leading team of developers to deliver value to customers.
+    \item Actively advocating for sustained engineering and sustainable practices.
+    \item Developing a tech-debt initiative to improve code quality.
+  \end{itemize}
+  \divider
+
+  \cvevent{Sr. frontend developer}{\href{https://www.crowdstrike.com/}{CrowdStrike}}{2018 -- 2021}{Edinburgh, Scotland}
+  \begin{itemize}
+    \item Frontend development of Falcon Console using EmberJS.
+    \item Implementation of stricter linter rules to enforce better DX.
+    \item Chrome extension implementation to improve DX.
+  \end{itemize}
+  \divider
+
+  \cvevent{Frontend developer}{\href{https://puppet.com}{Puppet}}{2013 -- 2018}{Belfast, Northern Ireland}
+    \begin{itemize}
+      \item Frontend development of Puppet Enterprise Console using EmberJS.
+      \item ReactJS + SemanticUI experience on other company projects.
+    \end{itemize}
+  \divider
+
+  \cvevent{Configuration manager}{\href{https://intraworlds.com}{IntraWorlds s.r.o.}}{2010 -- 2013}{Pilsen, Czechia}
+    \begin{itemize}
+      \item Linux infrastructure maintenance and growth. OS/application security and performance. Automation of daily developer tasks.
+      \item Product / infrastructure migration from ISO 8859-1 to UTF8.
+      \item Implementation of ISO 27001 - information security management system.
+      \item Infrastructure migration to Puppet.
+    \end{itemize}
+  \divider
+
+  \cvevent{Configuration manager}{\href{https://vsechnyzakazky.cz}{vsechnyzakazky.cz}}{2012}{Remote}
+    \begin{itemize}
+      \item Automating administration of linux servers via puppet.
+      \item Virtualization - libvirt and KVM.
+    \end{itemize}
+  \divider
+
+  \cvevent{Lector on network administrator course}{Jan Ámos Komenský academy}{2008}{Pilsen, Czechia}
+    \begin{itemize}
+      \item{Network administrator course for labor office.}
+    \end{itemize}
+  \divider
+
+\clearpage
+
+\cvsection[page2sidebar]{Side projects}
+
+  \cvachievement{\faLowVision}{\href{https://gradient-company.pudr.com}{gradient-company.pudr.com}}{Fully accessible web comics. Exploratory React project trying to bend the rules of what is possible with CSS \& accessibility.}
+
+  \cvachievement{\faCut}{\href{https://beauty-pay.cz}{beauty-pay.cz}}{All in one solution for hairdressers. EmberJS, Ruby on Rails, PostgreSQL, Docker, GitLab CI, Heroku, Netlify, Mailgun.}
+
+  % \cvachievement{\faCogs}{\href{https://ember-dag-generator.pudr.com}{ember-dag-generator.pudr.com}}{Puppet logo generator. D3, EmberJS, Heroku, Material design.}
+
+  \cvachievement{\faPhone}{\href{http://foun.pudr.com}{foun.pudr.com}}{Cell phone invoice manager for Vodafone corporate customers (private project).}
+
+  % \cvachievement{\faBug}{\href{https://github.com/MichalBryxi/Apache-fork-hack-finder-cleaner}{Apache fork hack cleaner}}{Script to detect specific malware installed on websites served via vulnerable version of Apache.}
+
+  \cvachievement{\faGlobe}{\href{https://chrome.google.com/webstore/detail/jenkins-aliceblue/piokgfpailonedbogfhknbmfgjjnbhba}{Jenkins AliceBlue} \& \href{https://chrome.google.com/webstore/detail/bitbucket-aliceblue/mciejdpiibmibnhkdlanmdiildgfclbl?hl=en-GB}{Bitbucket AliceBlue}}{Chrome extensions to improve DX when working with Jenkins \& Bitbucket.}
+
+  \cvachievement{\faCalendar}{\href{https://github.com/MichalBryxi/MagicPass2GPX}{MagicPass2GPX}}{Extract information about pass validity areas from a website and use geocoding API to produce a GPX with said locations.}
+
+  \cvachievement{\faDatabase}{\href{https://gitlab.com/michal-bryxi/open-source/vario-skytraxx-to-csv}{Vario Skytraxx to CSV}}{Export statistical data from Vario Skytraxx 2.0 into CSV format.}
+  
+  \cvachievement{\faArchive}{\href{https://justify-this-align-4-tailwind.netlify.app/}{Justify this Align 4 Tailwind}}{Visual explanation of TailwindCSS flex / grid classes.}
+  
+  \divider
+
+  \cvachievement{\faSafari}{Websites}{
+    \begin{description}
+      \item [Billiard club presentation] - Drupal - \url{http://kulecnik-plzen.cz}
+      \item [Sport blog] - Empress - \url{https://sportsting-misa.pudr.com/}
+      \item [Event blog] - Firebase, Bootstrap - \url{http://vr2015.pudr.com}
+      \item [Travel blog] - Bootstrap - \url{http://elberadweg.pudr.com/}
+    \end{description}
+  }
+
+  \divider
+
+  \cvachievement{\faMicrophone}{Talks at conferences}{
+    \begin{description}
+      \item[2022 - Remote] - \href{https://docs.google.com/presentation/d/1B1XjniRb-TOTEC5hcybS-H3TbMaVELrWFj5nVDqHXLY/edit?usp=sharing}{The case for consistency in frontend apps}
+      \item[2021 - EmberFest] - \href{https://docs.google.com/presentation/d/1h5Ums3b_ljEa0dUqF8DRFcckvb-mFBzkWHd0DfGF1YU/edit?usp=sharing}{You're a contributor!}
+      \item[2020 - Remote] - \href{https://docs.google.com/presentation/d/1T3CnBkWr_1viQQW5ELit5mRpkqgoEdGc4NlZZDYHOK0/edit?usp=sharing}{How to make a flawless software 101}
+      \item[2018 - BelfastJS] - \href{https://docs.google.com/presentation/d/1RKmsvEUc96h9L9JFBEuxy8dZcYrHQBucT-igyzaPZeE/edit?usp=sharing}{Surprising a11y}
+      \item[2017 - BelfastJS] - \href{https://docs.google.com/presentation/d/17GuQDFzFBBhk3clD77heYypoRHWpIzSKR37X8YCcfXM/edit?usp=sharing}{Ember related goodness to blow our minds}
+      \item[2016 - DevOpsDays Berlin] - \href{https://docs.google.com/presentation/d/1r8V1kr3T9Ot7ctQlkOf7895iKFSoqg_wFZPdpKeq01g/edit?usp=sharing}{GitHub tricks you should know}
+      \item[2015 - EurOpen] - \href{https://drive.google.com/file/d/1y20VCkIx0N5OrE3G9VHUXvjVBtEdSNXr/view?usp=sharing}{Intro to Razor}
+    \end{description}
+  }
+
+\cvsection{Community projects}
+  \cvachievement{\faMountain}{\href{https://flightclub-interlaken.ch/}{Flight Club Interlaken}}{A social space for outdoor people. Helping with event organisation.}
+
+  \cvachievement{\faGraduationCap}{IT camp lector}{Camp oriented on acquiring basic knowledge of HTML, CSS, and good habits of using computers for children from 10 to 15 years of age.}
+
+  \cvachievement{\faFemale}{\href{http://tylidi.zcu.cz}{tylidi.zcu.cz}}{Seminar focused on attracting girls into IT.}
+
+  \cvachievement{\faBicycle}{\href{https://plzennakole.cz}{Pilsen on Bike}}{
+    \begin{description}
+      \item [Critical mass] - Organisation of event that tries to promote the usage of bike as alternative mode of transportation.
+      \item [Bike to work] - Helping with organisation.
+      \item [Website consultation] - Design, content.
+    \end{description}
+  }
+
+% \cvsection[page2sidebar]{Publications}
+
+% \nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
