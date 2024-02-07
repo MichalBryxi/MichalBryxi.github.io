@@ -69,7 +69,7 @@
 
 \begin{document}
 \name{Michal Bryxí}
-\tagline{Full stack web developer}
+\tagline{Full stack web developer \& Outdoor enthusiast}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 \photo{2.5cm}{picture.jpg}
 \personalinfo{%
@@ -81,7 +81,7 @@
   \location{Interlaken, Switzerland}
   % \homepage{www.pudr.com}
   \href{https://linkedin.com/in/michalbryxi}{\linkedin{linkedin.com/in/michalbryxi}}
-  \href{https://gitlab.com/michal.bryxi}{\printinfo{\faGitlab}{gitlab.com/michal.bryxi}}
+  % \href{https://gitlab.com/michal.bryxi}{\printinfo{\faGitlab}{gitlab.com/michal.bryxi}}
   \href{https://github.com/MichalBryxi}{\printinfo{\faGithub}{github.com/MichalBryxi}}
   % \github{github.com/mmayer} % I'm just making this up though.
 %   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
@@ -100,114 +100,78 @@
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
-\cvsection[page1sidebar]{Experience}
+\cvsection[page1sidebar]{IT experience}
 
-  \cvevent{Engineering manager}{\href{https://www.crowdstrike.com/}{CrowdStrike}}{2021 -- 2023}{Interlaken, Switzerland}
+  \cvevent{Sr. frontend developer \& Engineering manager}{\href{https://www.crowdstrike.com/}{CrowdStrike (Cybersecurity)}}{2018 -- 2023}{Interlaken, Switzerland}
   \begin{itemize}
-    \item Leading team of developers to deliver value to customers.
-    \item Actively advocating for sustained engineering and sustainable practices.
-    \item Developing a tech-debt initiative to improve code quality.
+    \item Manager: Team leader, sustainability, code quality
+    \item Sr. developer: Website and browser extension development
   \end{itemize}
+
   \divider
 
-  \cvevent{Sr. frontend developer}{\href{https://www.crowdstrike.com/}{CrowdStrike}}{2018 -- 2021}{Edinburgh, Scotland}
-  \begin{itemize}
-    \item Frontend development of Falcon Console using EmberJS.
-    \item Implementation of stricter linter rules to enforce better DX.
-    \item Chrome extension implementation to improve DX.
-  \end{itemize}
-  \divider
-
-  \cvevent{Frontend developer}{\href{https://puppet.com}{Puppet}}{2013 -- 2018}{Belfast, Northern Ireland}
+  \cvevent{Frontend developer}{\href{https://puppet.com}{Puppet (IT automation)}}{2013 -- 2018}{Belfast, Northern Ireland}
     \begin{itemize}
-      \item Frontend development of Puppet Enterprise Console using EmberJS.
-      \item ReactJS + SemanticUI experience on other company projects.
+      \item Website development
     \end{itemize}
   \divider
 
-  \cvevent{Configuration manager}{\href{https://intraworlds.com}{IntraWorlds s.r.o.}}{2010 -- 2013}{Pilsen, Czechia}
+  \cvevent{DevOps}{\href{https://intraworlds.com}{IntraWorlds s.r.o. (Private social network)}}{2010 -- 2013}{Pilsen, Czechia}
     \begin{itemize}
-      \item Linux infrastructure maintenance and growth. OS/application security and performance. Automation of daily developer tasks.
-      \item Product / infrastructure migration from ISO 8859-1 to UTF8.
-      \item Implementation of ISO 27001 - information security management system.
-      \item Infrastructure migration to Puppet.
+      \item Server administration, system automation, security management
     \end{itemize}
   \divider
 
-  \cvevent{Configuration manager}{\href{https://vsechnyzakazky.cz}{vsechnyzakazky.cz}}{2012}{Remote}
-    \begin{itemize}
-      \item Automating administration of linux servers via puppet.
-      \item Virtualization - libvirt and KVM.
-    \end{itemize}
-  \divider
+  % \cvevent{Lecturer in network administrator course}{Jan Ámos Komenský academy}{2008}{Pilsen, Czechia}
+  %   \begin{itemize}
+  %     \item{Network administrator course for labor office.}
+  %   \end{itemize}
 
-  \cvevent{Lector on network administrator course}{Jan Ámos Komenský academy}{2008}{Pilsen, Czechia}
-    \begin{itemize}
-      \item{Network administrator course for labor office.}
-    \end{itemize}
-  \divider
+% \clearpage
 
-\clearpage
+\cvsection[]{Outdoor experience}
 
-\cvsection[page2sidebar]{Side projects}
+\cvevent{\cvskill{Trail running}{4}}{}{since 2015}{}
+\begin{itemize}
+  \item{Various running competitions with distances up to 70km}
+  \item{E51, Ben Nevis Ultra, Ring of Steall, Thieves Road Race, Tromsø Tromsdalstind Skyrace, Niesen Treppenlauf, Vertical km du Mont Blanc, ...}
+\end{itemize}
+\divider
 
-  \cvachievement{\faLowVision}{\href{https://gradient-company.pudr.com}{gradient-company.pudr.com}}{Fully accessible web comics. Exploratory React project trying to bend the rules of what is possible with CSS \& accessibility.}
+\cvevent{\cvskill{Climbing}{3}}{}{since 2012}{}
+\begin{itemize}
+  \item{Hobby climber up to 6a with focus on sports, but also experience in bouldering, multi-pitch and trad}
+  \item {Introduced many people to sports climbing \& bouldering}
+  \item{Via ferratas up to D}
+\end{itemize}
+\divider
 
-  \cvachievement{\faCut}{\href{https://beauty-pay.cz}{beauty-pay.cz}}{All in one solution for hairdressers. EmberJS, Ruby on Rails, PostgreSQL, Docker, GitLab CI, Heroku, Netlify, Mailgun.}
+\cvevent{\cvskill{Alpine skiing \& ski touring}{2}}{}{since 2021}{}
+\begin{itemize}
+  \item{Powder skiing course}
+  \item{Basic avalanche training course}
+%   \cvevent{Powder skiing course}{\href{https://www.coolschool.ch/}{Cool School}}{Jan 2024}{Lötschental}
 
-  % \cvachievement{\faCogs}{\href{https://ember-dag-generator.pudr.com}{ember-dag-generator.pudr.com}}{Puppet logo generator. D3, EmberJS, Heroku, Material design.}
+% \cvevent{Basic avalanche training course}{\href{https://outdoor.ch}{Outdoor+}}{Feb 2024}{First}
+\end{itemize}
+\divider
 
-  \cvachievement{\faPhone}{\href{http://foun.pudr.com}{foun.pudr.com}}{Cell phone invoice manager for Vodafone corporate customers (private project).}
+\cvevent{\cvskill{Paragliding}{1}}{}{since 2022}{}
+\begin{itemize}
+  \item{Solo pilot}
+\end{itemize}
 
-  % \cvachievement{\faBug}{\href{https://github.com/MichalBryxi/Apache-fork-hack-finder-cleaner}{Apache fork hack cleaner}}{Script to detect specific malware installed on websites served via vulnerable version of Apache.}
+\divider
 
-  \cvachievement{\faGlobe}{\href{https://chrome.google.com/webstore/detail/jenkins-aliceblue/piokgfpailonedbogfhknbmfgjjnbhba}{Jenkins AliceBlue} \& \href{https://chrome.google.com/webstore/detail/bitbucket-aliceblue/mciejdpiibmibnhkdlanmdiildgfclbl?hl=en-GB}{Bitbucket AliceBlue}}{Chrome extensions to improve DX when working with Jenkins \& Bitbucket.}
+\cvevent{\cvskill{Geocaching}{5}}{}{since 2005}{}
+\begin{itemize}
+  \item{Keen geocacher and author of few boxes}
+\end{itemize}
 
-  \cvachievement{\faCalendar}{\href{https://github.com/MichalBryxi/MagicPass2GPX}{MagicPass2GPX}}{Extract information about pass validity areas from a website and use geocoding API to produce a GPX with said locations.}
 
-  \cvachievement{\faDatabase}{\href{https://gitlab.com/michal-bryxi/open-source/vario-skytraxx-to-csv}{Vario Skytraxx to CSV}}{Export statistical data from Vario Skytraxx 2.0 into CSV format.}
-  
-  \cvachievement{\faArchive}{\href{https://justify-this-align-4-tailwind.netlify.app/}{Justify this Align 4 Tailwind}}{Visual explanation of TailwindCSS flex / grid classes.}
-  
-  \divider
 
-  \cvachievement{\faSafari}{Websites}{
-    \begin{description}
-      \item [Billiard club presentation] - Drupal - \url{http://kulecnik-plzen.cz}
-      \item [Sport blog] - Empress - \url{https://sportsting-misa.pudr.com/}
-      \item [Event blog] - Firebase, Bootstrap - \url{http://vr2015.pudr.com}
-      \item [Travel blog] - Bootstrap - \url{http://elberadweg.pudr.com/}
-    \end{description}
-  }
-
-  \divider
-
-  \cvachievement{\faMicrophone}{Talks at conferences}{
-    \begin{description}
-      \item[2022 - Remote] - \href{https://docs.google.com/presentation/d/1B1XjniRb-TOTEC5hcybS-H3TbMaVELrWFj5nVDqHXLY/edit?usp=sharing}{The case for consistency in frontend apps}
-      \item[2021 - EmberFest] - \href{https://docs.google.com/presentation/d/1h5Ums3b_ljEa0dUqF8DRFcckvb-mFBzkWHd0DfGF1YU/edit?usp=sharing}{You're a contributor!}
-      \item[2020 - Remote] - \href{https://docs.google.com/presentation/d/1T3CnBkWr_1viQQW5ELit5mRpkqgoEdGc4NlZZDYHOK0/edit?usp=sharing}{How to make a flawless software 101}
-      \item[2018 - BelfastJS] - \href{https://docs.google.com/presentation/d/1RKmsvEUc96h9L9JFBEuxy8dZcYrHQBucT-igyzaPZeE/edit?usp=sharing}{Surprising a11y}
-      \item[2017 - BelfastJS] - \href{https://docs.google.com/presentation/d/17GuQDFzFBBhk3clD77heYypoRHWpIzSKR37X8YCcfXM/edit?usp=sharing}{Ember related goodness to blow our minds}
-      \item[2016 - DevOpsDays Berlin] - \href{https://docs.google.com/presentation/d/1r8V1kr3T9Ot7ctQlkOf7895iKFSoqg_wFZPdpKeq01g/edit?usp=sharing}{GitHub tricks you should know}
-      \item[2015 - EurOpen] - \href{https://drive.google.com/file/d/1y20VCkIx0N5OrE3G9VHUXvjVBtEdSNXr/view?usp=sharing}{Intro to Razor}
-    \end{description}
-  }
-
-\cvsection{Community projects}
-  \cvachievement{\faMountain}{\href{https://flightclub-interlaken.ch/}{Flight Club Interlaken}}{A social space for outdoor people. Helping with event organisation.}
-
-  \cvachievement{\faGraduationCap}{IT camp lector}{Camp oriented on acquiring basic knowledge of HTML, CSS, and good habits of using computers for children from 10 to 15 years of age.}
-
-  \cvachievement{\faFemale}{\href{http://tylidi.zcu.cz}{tylidi.zcu.cz}}{Seminar focused on attracting girls into IT.}
-
-  \cvachievement{\faBicycle}{\href{https://plzennakole.cz}{Pilsen on Bike}}{
-    \begin{description}
-      \item [Critical mass] - Organisation of event that tries to promote the usage of bike as alternative mode of transportation.
-      \item [Bike to work] - Helping with organisation.
-      \item [Website consultation] - Design, content.
-    \end{description}
-  }
+% TODOs
+% - introduced people to climbing
 
 % \cvsection[page2sidebar]{Publications}
 
