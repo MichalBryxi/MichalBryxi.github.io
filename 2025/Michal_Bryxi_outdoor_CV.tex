@@ -1,0 +1,226 @@
+% !TEX program = lualatex
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+% \definecolor{mygray}{gray}{0.95}
+\pagecolor{white}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{heading}{HTML}{606c38}
+\definecolor{tagline}{HTML}{283618}
+\definecolor{emphasis}{HTML}{bc6c25}
+\definecolor{accent}{HTML}{283618}
+\definecolor{body}{HTML}{283618}
+\colorlet{emphasis}{emphasis}
+\colorlet{heading}{heading}
+\colorlet{tagline}{tagline}
+\colorlet{accent}{accent}
+\colorlet{body}{body}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+% \addbibresource{sample.bib}
+
+\begin{document}
+\name{Michal Bryxí}
+\tagline{Outdoor enthusiast \& Full stack web developer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{picture.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \href{mailto:michal.bryxi@gmail.com}{\email{michal.bryxi@gmail.com}}
+  \href{tel:+41779554796}{\phone{+41779554796}}
+  % \mailaddress{Address, Street, 00000 County}
+  \location{Interlaken, Switzerland}
+  % \homepage{www.pudr.com}
+  \href{https://linkedin.com/in/michalbryxi}{\linkedin{linkedin.com/in/michalbryxi}}
+  % \href{https://gitlab.com/michal.bryxi}{\printinfo{\faGitlab}{gitlab.com/michal.bryxi}}
+  \href{https://github.com/MichalBryxi}{\printinfo{\faGithub}{github.com/MichalBryxi}}
+  % \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+  \makecvheader
+\end{fullwidth}
+
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Guiding experience}
+
+  \cvevent{E-bike guide in training}{\href{https://www.flyingwheels.ch}{Flying Wheels Interlaken}}{2025}{Interlaken, CH}
+  \begin{itemize}
+    \item Guiding e-bike tours for groups of 4 to 8 people
+    \item Picnic preparation, providing local trivia information, answering questions
+  \end{itemize}
+
+  \divider
+
+  \cvevent{E-bike tour guide}{\href{https://loop-tours.com}{Loop Tours}}{2024}{Interlaken, CH}
+  \begin{itemize}
+    \item Bikes and picnic preparation, communication with clients, tailoring tour to individual needs
+    \item Providing tours with local knowledge of Interlaken and surrounding areas
+  \end{itemize}
+
+\cvsection[]{Outdoor experience}
+
+\cvevent{\cvskill{Trail running}{4}}{}{}{}
+\begin{itemize}
+  \item{Various running competitions with distances up to 100km}
+  \item{Baroko 100, Matterhorn Ultraks Extreme, E51, Ben Nevis Ultra, Ring of Steall, Thieves Road Race, Tromsø Tromsdalstind Skyrace, Niesen Treppenlauf, Vertical km du Mont Blanc, ...}
+\end{itemize}
+\divider
+
+\cvevent{\cvskill{Climbing}{3}}{}{}{}
+\begin{itemize}
+  \item {Hobby climber up to 6a with focus on sports, with experience in bouldering, multi-pitch and trad}
+  \item {Introduced many people to sports climbing \& bouldering}
+  \item {Absolved Boulder Routenbaukurse from SAC}
+  \item {Via ferratas up to grade D}
+\end{itemize}
+\divider
+
+\cvevent{\cvskill{Alpine skiing \& ski touring}{2}}{}{}{}
+\begin{itemize}
+  \item{Powder skiing course}
+  \item{Basic avalanche training course}
+%   \cvevent{Powder skiing course}{\href{https://www.coolschool.ch/}{Cool School}}{Jan 2024}{Lötschental}
+
+% \cvevent{Basic avalanche training course}{\href{https://outdoor.ch}{Outdoor+}}{Feb 2024}{First}
+\end{itemize}
+\divider
+
+\cvevent{\cvskill{Paragliding}{1}}{}{}{}
+\begin{itemize}
+  \item{Solo pilot, IPPI 4, 1x SIKU/SAV}
+  \item {Flying experience from Switzerland and Nepal}
+\end{itemize}
+
+\divider
+
+\cvevent{\cvskill{Geocaching}{5}}{}{}{}
+\begin{itemize}
+  \item{Keen geocacher and author of few boxes}
+\end{itemize}
+
+\newpage
+
+\cvsection[page2sidebar]{IT experience}
+
+  \cvevent{Sr. Frontend developer}{\href{https://www.heia-fr.ch/en/}{Hochschule für Technik und Architektur Freiburg}}{2018 -- 2023}{Edinburgh, UK / Interlaken, CH}
+  \begin{itemize}
+    \item Manager: Team leader, sustainability, code quality
+    \item Sr. developer: Website and browser extension development
+  \end{itemize}
+
+  \cvevent{Sr. Frontend developer / Engineering manager}{\href{https://www.crowdstrike.com/}{CrowdStrike (Cybersecurity)}}{2018 -- 2023}{Edinburgh, UK / Interlaken, CH}
+  \begin{itemize}
+    \item Manager: Team leader, sustainability, code quality
+    \item Sr. developer: Website and browser extension development
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Frontend developer}{\href{https://puppet.com}{Puppet (IT automation)}}{2013 -- 2018}{Belfast, Northern Ireland}
+    \begin{itemize}
+      \item Website development
+    \end{itemize}
+  \divider
+
+  \cvevent{DevOps}{\href{https://intraworlds.com}{IntraWorlds s.r.o. (Private social network)}}{2010 -- 2013}{Pilsen, Czechia}
+    \begin{itemize}
+      \item Server administration, system automation, security management
+    \end{itemize}
+  \divider
+
+  % \cvevent{Lecturer in network administrator course}{Jan Ámos Komenský academy}{2008}{Pilsen, Czechia}
+  %   \begin{itemize}
+  %     \item{Network administrator course for labor office.}
+  %   \end{itemize}
+
+% \clearpage
+
+
+
+% TODOs
+% - introduced people to climbing
+
+% \cvsection[page2sidebar]{Publications}
+
+% \nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
